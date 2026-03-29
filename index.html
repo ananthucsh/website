@@ -1,274 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="AS DESIGN: Transforming businesses through strategic design, combining color psychology and modern web technologies.">
-    <title>AS DESIGN | Strategic Web Design & Strategy</title>
+    <title>Under Construction</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
 
-    <link rel="stylesheet" href="styles.css">
+        .container {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            animation: slideDown 1.5s ease;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+            animation: fadeIn 2.5s ease;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 28px;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+            animation: fadeIn 3.5s ease;
+        }
+
+        .call-btn {
+            background: #007BFF;
+        }
+
+        .call-btn:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe5d;
+            transform: scale(1.05);
+        }
+
+        /* Floating circles animation */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.2;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            background: #007BFF;
+            top: 10%;
+            left: 15%;
+        }
+
+        .circle:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            background: #00C9A7;
+            bottom: 15%;
+            right: 10%;
+        }
+
+        .circle:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background: #FFC107;
+            top: 70%;
+            left: 30%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
 </head>
-
 <body>
-    <header class="navbar" id="navbar">
-        <div class="container nav-content">
-            <a href="#home" class="logo" style="display: flex; align-items: center; gap: 8px;">
-                <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="logo-mark">
-                    <path d="M18 2 L32 10 L18 18 L4 10 Z" fill="var(--coral-accent)" />
-                    <path d="M18 18 L32 10 L32 26 L18 34 Z" fill="var(--navy-blue)" />
-                    <path d="M18 18 L18 34 L4 26 L4 10 Z" fill="var(--navy-lighter)" />
-                </svg>
-                AS <span>DESIGN</span>
+
+    <!-- Animated background -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="container">
+        <h1>🚧 Website Under Construction</h1>
+        <p>We’re working hard to launch something amazing. Stay tuned!</p>
+
+        <div class="buttons">
+            <a href="tel:+919744572639" class="btn call-btn">📞 Call Me</a>
+
+            <a href="https://wa.me/919744572639?text=Hi%20I%20am%20interested" 
+               class="btn whatsapp-btn" target="_blank">
+               💬 WhatsApp
             </a>
-            <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
         </div>
-    </header>
+    </div>
 
-    <main>
-        <!-- Home / Hero Section -->
-        <section id="home" class="carousel-section">
-            <div class="carousel-container">
-                <div class="carousel-slide active"
-                    style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1920&q=80');">
-
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1920&q=80');">
-
-                </div>
-
-
-
-
-                <div class="carousel-dots">
-                    <span class="dot active" onclick="goToSlide(0)"></span>
-                    <span class="dot" onclick="goToSlide(1)"></span>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="page-hero bg-light">
-            <div class="container hero-container">
-                <div class="hero-content reveal">
-                    <span class="badge">Who We Are</span>
-                    <h2>A Premium <span>Digital</span> Agency</h2>
-                    <p
-                        style="text-align: left; margin-top: 1.5rem; color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; max-width: 600px;">
-                        A target-driven digital agency dedicated to crafting high-performance websites and graphics
-                        design that elevate brands and drive measurable growth.</p>
-                </div>
-                <div class="hero-image reveal delay-1">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
-                        alt="AS DESIGN Creative Team Working"
-                        style="border-radius: 12px; box-shadow: 0 20px 40px rgba(10, 25, 47, 0.15); width: 100%; object-fit: cover; border: 1px solid rgba(0,0,0,0.05);">
-                </div>
-            </div>
-        </section>
-
-        <!-- About Cards -->
-        <section class="about-text section-padding" style="padding-top: 50px;">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-card reveal-scale">
-                        <h3>Our Mission</h3>
-                        <p>We are a passionate and creative design startup dedicated to transforming ideas into visually
-                            stunning experiences. Our mission is to help businesses build strong, memorable brands.</p>
-                    </div>
-                    <div class="about-card reveal-scale delay-1">
-                        <h3>Our Focus</h3>
-                        <p>By combining deep market research with cutting-edge web technologies, we build digital
-                            ecosystems that don't just look spectacular—they perform for your bottom line.</p>
-                    </div>
-                    <div class="about-card reveal-scale delay-2">
-                        <h3>Our Team</h3>
-                        <p>Our team combines creativity with modern technology to craft unique and impactful designs
-                            tailored to each client’s needs, driven by innovation and excellence.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services section-padding bg-light">
-            <div class="container">
-                <div class="section-title reveal">
-                    <h2>Our <span>Services</span></h2>
-                    <p>Comprehensive digital solutions tailored for market leaders.</p>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card reveal delay-1">
-                        <div class="card-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                            </svg>
-                        </div>
-                        <h3>UI/UX Design</h3>
-                        <p>Creating intuitive, visually stunning interfaces focused on seamless user journeys,
-                            maximizing engagement, and delivering exceptional digital experiences.</p>
-                    </div>
-                    <div class="service-card reveal delay-2">
-                        <div class="card-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                                <path d="M2 2l7.5 7.5"></path>
-                            </svg>
-                        </div>
-                        <h3>Graphic Design</h3>
-                        <p>Impactful visual assets, modern illustrations, and marketing collateral designed to
-                            communicate your message instantly and effectively.</p>
-                    </div>
-                    <div class="service-card reveal delay-3">
-                        <div class="card-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                        </div>
-                        <h3>Web Development</h3>
-                        <p>End-to-end custom web development, creating robust, scalable, and high-performing digital
-                            solutions meticulously coded for your business objectives.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-redesign-section">
-            <div class="contact-redesign-container reveal">
-                <div class="contact-redesign-grid">
-                    <!-- Left: Info -->
-                    <div class="contact-redesign-info">
-                        <h2>Get in <span>Touch</span></h2>
-                        <div class="info-list">
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="info-content">
-                                    <strong>Our Address</strong>
-                                    <span>.</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path
-                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="info-content">
-                                    <strong>Direct Contact</strong>
-                                    <span>+919744572639</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path
-                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                        </path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="info-content">
-                                    <strong>Send an Email</strong>
-                                    <span>admin@asdesign.in</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Form -->
-                    <div class="contact-redesign-form-wrapper">
-                        <h2>Contact Us</h2>
-                        <form id="contactForm" class="contact-redesign-form" action="https://formspree.io/f/xwvwlvyj"
-                            method="POST">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message" placeholder="Your Message" required></textarea>
-                            <button type="submit">Send Message</button>
-                        </form>
-                        <div id="responseMsg" class="contact-redesign-msg"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#home" class="logo" style="display: flex; align-items: center; gap: 8px;">
-                        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="logo-mark">
-                            <path d="M18 2 L32 10 L18 18 L4 10 Z" fill="var(--coral-accent)" />
-                            <path d="M18 18 L32 10 L32 26 L18 34 Z" fill="var(--navy-blue)" />
-                            <path d="M18 18 L18 34 L4 26 L4 10 Z" fill="var(--navy-lighter)" />
-                        </svg>
-                        AS <span>DESIGN</span>
-                    </a>
-                    <p>A premium digital agency dedicated to crafting high-performance websites and graphics design that
-                        elevate brands and drive measurable growth.</p>
-                </div>
-                <div class="footer-nav">
-                    <h4>Company</h4>
-                    <a href="#home">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-nav">
-                    <h4>Legal</h4>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 AS DESIGN. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-    </button>
-
-
-    <script src="script.js"></script>
 </body>
-
 </html>
