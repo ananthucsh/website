@@ -1,142 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #ffffff;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .container {
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            animation: slideDown 1.5s ease;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #666;
-            animation: fadeIn 2.5s ease;
-        }
-
-        .buttons {
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 28px;
-            font-size: 1em;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: 0.3s;
-            animation: fadeIn 3.5s ease;
-        }
-
-        .call-btn {
-            background: #007BFF;
-        }
-
-        .call-btn:hover {
-            background: #0056b3;
-            transform: scale(1.05);
-        }
-
-        .whatsapp-btn {
-            background: #25D366;
-        }
-
-        .whatsapp-btn:hover {
-            background: #1ebe5d;
-            transform: scale(1.05);
-        }
-
-        /* Floating circles animation */
-        .circle {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.2;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        .circle:nth-child(1) {
-            width: 200px;
-            height: 200px;
-            background: #007BFF;
-            top: 10%;
-            left: 15%;
-        }
-
-        .circle:nth-child(2) {
-            width: 150px;
-            height: 150px;
-            background: #00C9A7;
-            bottom: 15%;
-            right: 10%;
-        }
-
-        .circle:nth-child(3) {
-            width: 100px;
-            height: 100px;
-            background: #FFC107;
-            top: 70%;
-            left: 30%;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideDown {
-            from { transform: translateY(-40px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-    </style>
+    <meta name="description"content="AS DESIGN: Transforming Your businesses ">
+    <title>AS DESIGN </title>
+    <meta property="og:image" content="https://github.com/ananthucsh/work/blob/main/img/asdesign.jpg?raw=true">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
+
 <body>
-
-    <!-- Animated background -->
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-
-    <div class="container">
-        <h1>🚧 Website Under Construction</h1>
-        <p>We’re working hard to launch something amazing. Stay tuned!</p>
-
-               <a href="https://wa.me/919744572639" 
-               class="btn whatsapp-btn" target="_blank">
-               Contact 
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo" style="display: flex; align-items: center; gap: 8px;">
+                <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="logo-mark">
+                    <path d="M18 2 L32 10 L18 18 L4 10 Z" fill="var(--coral-accent)" />
+                    <path d="M18 18 L32 10 L32 26 L18 34 Z" fill="var(--navy-blue)" />
+                    <path d="M18 18 L18 34 L4 26 L4 10 Z" fill="var(--navy-lighter)" />
+                </svg>
+                AS <span>DESIGN</span>
             </a>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <!-- Interactive Animated Physics Hero -->
+        <section id="home" class="physics-hero">
+            <!-- UI Overlay -->
+            <div class="ui-layer">
+                <div class="hero-logo">
+                    <svg width="48" height="48" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="logo-mark">
+                        <path d="M18 2 L32 10 L18 18 L4 10 Z" fill="#FF5A5F" />
+                        <path d="M18 18 L32 10 L32 26 L18 34 Z" fill="#0A192F" />
+                        <path d="M18 18 L18 34 L4 26 L4 10 Z" fill="#233554" />
+                    </svg>
+                    AS <span>DESIGN</span>
+                </div>
+                <div class="controls">
+                    <button id="btn-gravity">Zero Gravity</button>
+                    <button id="btn-explode">Explode</button>
+                </div>
+
+                <a href="#about" class="scroll-down" aria-label="Scroll to About Section">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Container for the physics elements -->
+            <div id="scene-container"></div>
+
+            <!-- Hidden list to act as data source -->
+            <ul id="color-source" style="display: none;">
+                <li>AliceBlue</li>
+                <li>AntiqueWhite</li>
+                <li>Aqua</li>
+                <li>Aquamarine</li>
+                <li>Azure</li>
+                <li>Beige</li>
+                <li>Bisque</li>
+                <li>Black</li>
+                <li>BlanchedAlmond</li>
+                <li>Blue</li>
+                <li>BlueViolet</li>
+                <li>Brown</li>
+                <li>BurlyWood</li>
+                <li>CadetBlue</li>
+                <li>Chartreuse</li>
+                <li>Chocolate</li>
+                <li>Coral</li>
+                <li>CornflowerBlue</li>
+                <li>Cornsilk</li>
+                <li>Crimson</li>
+                <li>Cyan</li>
+                <li>DarkBlue</li>
+                <li>DarkCyan</li>
+                <li>DarkGoldenRod</li>
+                <li>DarkGray</li>
+                <li>DarkGrey</li>
+                <li>DarkGreen</li>
+                <li>DarkKhaki</li>
+                <li>DarkMagenta</li>
+                <li>DarkOliveGreen</li>
+                <li>DarkOrange</li>
+                <li>DarkOrchid</li>
+                <li>DarkRed</li>
+                <li>DarkSalmon</li>
+                <li>DarkSeaGreen</li>
+                <li>DarkSlateBlue</li>
+                <li>DarkSlateGray</li>
+                <li>DarkSlateGrey</li>
+                <li>DarkTurquoise</li>
+                <li>DarkViolet</li>
+                <li>DeepPink</li>
+                <li>DeepSkyBlue</li>
+                <li>DimGray</li>
+                <li>DimGrey</li>
+                <li>DodgerBlue</li>
+                <li>FireBrick</li>
+                <li>FloralWhite</li>
+                <li>ForestGreen</li>
+                <li>Fuchsia</li>
+                <li>Gainsboro</li>
+                <li>GhostWhite</li>
+                <li>Gold</li>
+                <li>GoldenRod</li>
+                <li>Gray</li>
+                <li>Grey</li>
+                <li>Green</li>
+                <li>GreenYellow</li>
+                <li>HoneyDew</li>
+                <li>HotPink</li>
+                <li>IndianRed</li>
+                <li>Indigo</li>
+                <li>Ivory</li>
+                <li>Khaki</li>
+                <li>Lavender</li>
+                <li>LavenderBlush</li>
+                <li>LawnGreen</li>
+                <li>LemonChiffon</li>
+                <li>LightBlue</li>
+                <li>LightCoral</li>
+                <li>LightCyan</li>
+                <li>LightGoldenRodYellow</li>
+                <li>LightGray</li>
+                <li>LightGrey</li>
+                <li>LightGreen</li>
+                <li>LightPink</li>
+                <li>LightSalmon</li>
+                <li>LightSeaGreen</li>
+                <li>LightSkyBlue</li>
+                <li>LightSlateGray</li>
+                <li>LightSlateGrey</li>
+                <li>LightSteelBlue</li>
+                <li>LightYellow</li>
+                <li>Lime</li>
+                <li>LimeGreen</li>
+                <li>Linen</li>
+                <li>Magenta</li>
+                <li>Maroon</li>
+                <li>MediumAquaMarine</li>
+                <li>MediumBlue</li>
+                <li>MediumOrchid</li>
+                <li>MediumPurple</li>
+                <li>MediumSeaGreen</li>
+                <li>MediumSlateBlue</li>
+                <li>MediumSpringGreen</li>
+                <li>MediumTurquoise</li>
+                <li>MediumVioletRed</li>
+                <li>MidnightBlue</li>
+                <li>MintCream</li>
+                <li>MistyRose</li>
+                <li>Moccasin</li>
+                <li>NavajoWhite</li>
+                <li>Navy</li>
+                <li>OldLace</li>
+                <li>Olive</li>
+                <li>OliveDrab</li>
+                <li>Orange</li>
+                <li>OrangeRed</li>
+                <li>Orchid</li>
+                <li>PaleGoldenRod</li>
+                <li>PaleGreen</li>
+                <li>PaleTurquoise</li>
+                <li>PaleVioletRed</li>
+                <li>PapayaWhip</li>
+                <li>PeachPuff</li>
+                <li>Peru</li>
+                <li>Pink</li>
+                <li>Plum</li>
+                <li>PowderBlue</li>
+                <li>Purple</li>
+                <li>RebeccaPurple</li>
+                <li>Red</li>
+                <li>RosyBrown</li>
+                <li>RoyalBlue</li>
+                <li>SaddleBrown</li>
+                <li>Salmon</li>
+                <li>SandyBrown</li>
+                <li>SeaGreen</li>
+                <li>SeaShell</li>
+                <li>Sienna</li>
+                <li>Silver</li>
+                <li>SkyBlue</li>
+                <li>SlateBlue</li>
+                <li>SlateGray</li>
+                <li>SlateGrey</li>
+                <li>Snow</li>
+                <li>SpringGreen</li>
+                <li>SteelBlue</li>
+                <li>Tan</li>
+                <li>Teal</li>
+                <li>Thistle</li>
+                <li>Tomato</li>
+                <li>Turquoise</li>
+                <li>Violet</li>
+                <li>Wheat</li>
+                <li>White</li>
+                <li>WhiteSmoke</li>
+                <li>Yellow</li>
+                <li>YellowGreen</li>
+            </ul>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-hero bg-light">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="badge">Who We Are</span>
+                   
+                    <p
+                        style="text-align: left; margin-top: 1.5rem; color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; max-width: 600px;">
+                        We are a forward-thinking design agency dedicated to transforming ideas into visually compelling and meaningful experiences. Our passion lies in blending creativity with strategy to craft designs that not only look stunning but also communicate effectively. From branding and digital design to user experience and visual storytelling, we help businesses stand out in an ever-evolving world.
+                      </p>
+                </div>
+                <div class="hero-image reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+                        alt="AS DESIGN Creative Team Working"
+                        style="border-radius: 12px; box-shadow: 0 20px 40px rgba(10, 25, 47, 0.15); width: 100%; object-fit: cover; border: 1px solid rgba(0,0,0,0.05);">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Cards -->
+        <section class="about-text section-padding" style="padding-top: 50px;">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card reveal-scale">
+                        <h3>Our Mission</h3>
+                        <p>Our mission is to empower brands through innovative, purposeful design. We strive to create work that inspires, engages, and delivers real impact. By combining creativity, technology, and a deep understanding of our clients’ goals, we aim to build lasting connections between brands and their audiences.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card reveal-scale delay-2">
+                        <h3>Our Team</h3>
+                        <p>Our team is a diverse group of designers, strategists, and creative thinkers who bring unique perspectives to every project. We believe collaboration is the key to great design, and we work closely with our clients to turn ideas into reality. With a shared commitment to excellence and innovation, our team continuously pushes boundaries to deliver exceptional results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section-padding bg-light">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Our <span>Services</span></h2>
+                    
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal delay-1">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating user-friendly and visually engaging interfaces for better user experience.</p>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.5 7.5"></path>
+                            </svg>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Designing creative visuals like logos, banners, and branding materials.</p>
+                    </div>
+                    <div class="service-card reveal delay-3">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive and functional websites for all devices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-redesign-section">
+            <div class="contact-redesign-container reveal">
+                <div class="contact-redesign-grid">
+                    <!-- Left: Info -->
+                    <div class="contact-redesign-info">
+                        <h2>Get in <span>Touch</span></h2>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <strong>Our Address</strong>
+                                    <span>.</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <strong>Direct Contact</strong>
+                                    <span>+919744572639</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <strong>Send an Email</strong>
+                                    <span>info@asdesign.in</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-redesign-form-wrapper">
+                        <h2>Contact Us</h2>
+                        <form id="contactForm" class="contact-redesign-form" action="https://formspree.io/f/xwvwlvyj"
+                            method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                        <div id="responseMsg" class="contact-redesign-msg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo" style="display: flex; align-items: center; gap: 8px;">
+                        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="logo-mark">
+                            <path d="M18 2 L32 10 L18 18 L4 10 Z" fill="var(--coral-accent)" />
+                            <path d="M18 18 L32 10 L32 26 L18 34 Z" fill="var(--navy-blue)" />
+                            <path d="M18 18 L18 34 L4 26 L4 10 Z" fill="var(--navy-lighter)" />
+                        </svg>
+                        AS <span>DESIGN</span>
+                        
+                    </a>
+                    <p>We are a creative team offering UI/UX design, graphics design, and modern web development solutions.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Company</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-nav">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 asdesign. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js'></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
