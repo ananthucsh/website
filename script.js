@@ -1,3 +1,14 @@
+// Preloader Hiding
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        preloader.classList.add("loaded");
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 800);
+    }
+});
+
 // Scroll Reveal Animation Initialization
 document.addEventListener("DOMContentLoaded", () => {
     // Reveal elements on scroll

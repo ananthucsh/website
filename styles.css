@@ -33,6 +33,62 @@
     box-sizing: border-box;
 }
 
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--navy-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s;
+}
+
+#preloader.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.preloader-logo {
+    animation: preloader-pulse 2s infinite ease-in-out;
+}
+
+.preloader-text {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    color: var(--text-white);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    opacity: 0;
+    animation: preloader-fadeIn 1s forwards 0.5s;
+    text-transform: uppercase;
+}
+
+.preloader-text span {
+    color: var(--coral-accent);
+}
+
+@keyframes preloader-pulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px var(--coral-accent)); }
+    50% { transform: scale(1.15); filter: drop-shadow(0 0 25px rgba(255, 90, 95, 0.5)); }
+}
+
+@keyframes preloader-fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px; /* Base offset for fixed navbar */
