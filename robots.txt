@@ -2,12 +2,5 @@
 User-agent: *
 Allow: /
 
-# Block unnecessary system folders
-Disallow: /styles.css
-Disallow: /404.html
-
-
-
-
 # Sitemap (VERY IMPORTANT for SEO)
 Sitemap: https://asdesign.in/sitemap.xml
