@@ -1,29 +1,9 @@
-# ------------------------------------
-# ENABLE CACHE CONTROL (10 MINUTES)
-# ------------------------------------
-<IfModule mod_expires.c>
-    ExpiresActive On
-
-    # Default: 10 minutes
-    ExpiresDefault "access plus 10 minutes"
-
-    # HTML (always refresh in 10 min)
-    ExpiresByType text/html "access plus 10 minutes"
-
-    # CSS & JS
-    ExpiresByType text/css "access plus 10 minutes"
-    ExpiresByType application/javascript "access plus 10 minutes"
-
-    # Images
-    ExpiresByType image/jpg "access plus 10 minutes"
-    ExpiresByType image/jpeg "access plus 10 minutes"
-    ExpiresByType image/png "access plus 10 minutes"
-    ExpiresByType image/gif "access plus 10 minutes"
-</IfModule>
-
-# ------------------------------------
-# CACHE-CONTROL HEADER (600 seconds)
-# ------------------------------------
-<IfModule mod_headers.c>
-    Header set Cache-Control "public, max-age=600"
-</IfModule>
+<FilesMatch "\.(html|htm|js|css)$">
+    FileETag None
+    <IfModule mod_headers.c>
+         Header unset ETag
+         Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+         Header set Pragma "no-cache"
+         Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+    </IfModule>
+</FilesMatch>
