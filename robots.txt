@@ -1,0 +1,16 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Block unnecessary system folders
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /cache/
+
+# Allow important assets for SEO
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap (VERY IMPORTANT for SEO)
+Sitemap: https://asdesign.in/sitemap.xml
