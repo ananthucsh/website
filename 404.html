@@ -1,75 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>404 - Page Not Found</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <meta name="description" content="The page you are looking for does not exist.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg: #f8fafc;
+        }
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ff4b2b, #ff416c);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.container {
-    max-width: 500px;
-}
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow: hidden;
+        }
 
-h1 {
-    font-size: 120px;
-    margin: 0;
-}
+        .container {
+            text-align: center;
+            max-width: 500px;
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-h2 {
-    margin: 10px 0;
-    font-weight: 500;
-}
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
 
-p {
-    font-size: 16px;
-    opacity: 0.9;
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #fff;
-    color: #ff416c;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+        .error-code {
+            font-size: 8rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to bottom, #1e293b, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-a:hover {
-    background: #f1f1f1;
-}
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
 
-.icon {
-    font-size: 60px;
-    margin-bottom: 15px;
-}
-</style>
+        p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
 
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+
+
+        /* Decorative circle */
+        .circle {
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+    </style>
 </head>
+
 <body>
+    <div class="circle" style="width: 600px; height: 600px; top: -100px; right: -100px;"></div>
+    <div class="circle" style="width: 400px; height: 400px; bottom: -50px; left: -100px;"></div>
 
-<div class="container">
-    <div class="icon">⚠️</div>
-    <h1>404</h1>
-    <h2>Page Not Found</h2>
-    <p>Oops! The page you are looking for doesn't exist or has been moved.</p>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1>Something went wrong.</h1>
+        <p>Page Not Found</p>
 
-    <a href="https://asdesign.in/">Go Back Home</a>
-</div>
+        <a href="/" class="btn">Go Back Home</a>
 
+
+    </div>
 </body>
+
 </html>
