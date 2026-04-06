@@ -1,6 +1,5 @@
-# Allow all search engines
-User-agent: *
-Allow: /
+
+
 
 # Sitemap (VERY IMPORTANT for SEO)
 Sitemap: https://asdesign.in/sitemap.xml
