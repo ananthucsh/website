@@ -1,5 +1,6 @@
 
-
+User-agent: *
+Disallow:
 
 # Sitemap (VERY IMPORTANT for SEO)
 Sitemap: https://asdesign.in/sitemap.xml
