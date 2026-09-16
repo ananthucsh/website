@@ -1,0 +1,192 @@
+THEME_STYLE = "Ferrari -inspired premium minimal design with white space, glass effects, soft blue gradients, rounded KPI cards and elegant typography"
+
+======================================================================
+AGENT WEBSITE — AI THEME CHANGER
+ഈ FILE എങ്ങനെ ഉപയോഗിക്കാം
+======================================================================
+
+ഈ file ഉപയോഗിച്ച് website-ന്റെ colours, typography, cards, spacing,
+background, visual style എന്നിവ മാറ്റാം. Agent details വീണ്ടും type ചെയ്യുകയോ
+താഴെയുള്ള prompt copy-paste ചെയ്യുകയോ വേണ്ട.
+
+നിങ്ങൾ ചെയ്യേണ്ടത്:
+
+1. മുകളിലെ FIRST LINE-ൽ quotation marks-ന്റെ ഉള്ളിലുള്ള THEME_STYLE മാത്രം
+   ആവശ്യാനുസരണം മാറ്റുക.
+
+   Examples:
+   - Modern Kerala-inspired premium theme using ivory, deep green and gold
+   - Elegant dark navy corporate theme with subtle gold highlights
+   - Clean blue-and-white professional banking-style design
+   - Warm, friendly family-insurance theme with pastel colours
+   - Bold modern glassmorphism design with teal and indigo gradients
+
+2. File save ചെയ്ത ശേഷം ഈ AI-THEME-CHANGER-PROMPT.txt മാത്രം ആദ്യം
+   ChatGPT അല്ലെങ്കിൽ Gemini-ലേക്ക് upload ചെയ്യുക.
+
+3. Message ഒന്നും type ചെയ്യേണ്ടതില്ല. AI ഈ file വായിച്ച് നിങ്ങളോട് താഴെ പറയുന്ന
+   website files upload ചെയ്യാൻ ആവശ്യപ്പെടും:
+
+   - index.html
+   - EDIT-MY-DETAILS.js
+   - agent-photo.jpg (photo layout പരിശോധിക്കാൻ)
+
+4. ചോദിക്കുമ്പോൾ മുകളിലെ മൂന്ന് files upload ചെയ്യുക. Prompt വീണ്ടും
+   copy-paste ചെയ്യേണ്ടതില്ല; website details വീണ്ടും type ചെയ്യേണ്ടതുമില്ല.
+
+5. AI പുതിയ complete index.html code നൽകണം. അത് index.html എന്ന പേരിൽ
+   download/save ചെയ്ത് പഴയ index.html replace ചെയ്യുക.
+
+6. EDIT-MY-DETAILS.js-ഉം agent-photo.jpg-ഉം മാറ്റരുത്.
+
+7. index.html double-click ചെയ്ത് website test ചെയ്യുക. എല്ലാം ശരിയാണെങ്കിൽ
+   complete folder Netlify-ൽ വീണ്ടും deploy ചെയ്യുക.
+
+
+======================================================================
+AI INSTRUCTIONS — PARTICIPANT COPY-PASTE ചെയ്യേണ്ടതില്ല
+======================================================================
+
+You are an AI website-redesign assistant. The user has uploaded this TXT file
+without typing a separate message. Treat the instructions in this file as the
+user's request and begin automatically.
+
+FIRST RESPONSE — DO NOT GENERATE CODE YET:
+
+Read THEME_STYLE from the first line. Briefly confirm the selected theme, then
+ask the user to upload these three files together:
+
+1. index.html
+2. EDIT-MY-DETAILS.js
+3. agent-photo.jpg
+
+Use plain, beginner-friendly language. Do not ask the user to copy this prompt,
+describe their website, re-enter agent details, or answer unnecessary
+questions. Wait until the required website files are uploaded.
+
+AFTER THE FILES ARE UPLOADED:
+
+Redesign the existing single-page insurance-agent website according to the
+THEME_STYLE written on the first line of this file.
+
+IMPORTANT: This is a redesign of the existing index.html, not a new website
+with a new data structure. First inspect all uploaded files and understand how
+they work together before generating any code.
+
+---------------------------------------------------------------------
+WEBSITE STRUCTURE
+---------------------------------------------------------------------
+
+The website uses three files that must remain in the same folder:
+
+1. index.html
+   - Contains the complete website structure, CSS design and page behaviour.
+   - It reads the agent's personal and professional information from the
+     separate JavaScript file.
+
+2. EDIT-MY-DETAILS.js
+   - This is the only file an ordinary agent edits.
+   - It contains the agent's name, title, location, experience, languages,
+     phone number, WhatsApp number, email, licence/agent details, availability,
+     About text, insurance products, product descriptions and other content.
+   - All existing field names, object names, array names and their meaning must
+     remain compatible with index.html.
+
+3. agent-photo.jpg
+   - This is the agent's photograph.
+   - index.html must continue to load it using the same relative filename.
+
+The website is a static website. It must work by double-clicking index.html on
+a Windows computer and must also work when the complete folder is deployed to
+Netlify. Do not require npm, a build command, React, a server, a database or any
+paid service.
+
+---------------------------------------------------------------------
+REDESIGN REQUIREMENTS
+---------------------------------------------------------------------
+
+Redesign the complete website in the requested THEME_STYLE while keeping it:
+
+- Exceptionally professional, modern and trustworthy
+- Suitable for an Indian general-insurance professional
+- Fully responsive on desktop, tablet and mobile
+- Easy to read for customers of different ages
+- Visually polished with excellent spacing and hierarchy
+- Fast-loading and accessible
+
+You may redesign:
+
+- Colours and gradients
+- Typography and font sizing
+- Header and navigation appearance
+- Hero-section composition
+- Agent photograph frame and placement
+- KPI/statistic cards
+- Insurance solution/product cards
+- About section
+- Contact/enquiry section
+- Buttons, icons, shadows, borders and backgrounds
+- Footer and responsive mobile layout
+- Subtle CSS animations and hover effects
+
+Use tasteful design judgment. Avoid clutter, tiny text, excessive animation,
+cartoonish graphics and generic template appearance.
+
+---------------------------------------------------------------------
+FUNCTIONALITY THAT MUST NOT BREAK
+---------------------------------------------------------------------
+
+- Continue loading every agent detail dynamically from EDIT-MY-DETAILS.js.
+- Preserve compatibility with every existing field in EDIT-MY-DETAILS.js.
+- Continue displaying agent-photo.jpg correctly.
+- Remove or hide any initials/placeholder letters placed over the photograph
+  when a valid photo is available. No text should cover the agent's face.
+- Keep all Call, WhatsApp, Email, navigation and enquiry-form functions working.
+- The WhatsApp enquiry form must continue preparing the intended message for
+  the configured agent number.
+- Preserve important insurance disclaimer/compliance text.
+- Preserve useful sections and content. Do not replace real agent information
+  with sample names, invented statistics or dummy contact details.
+- Do not hard-code personal information inside index.html if it already comes
+  from EDIT-MY-DETAILS.js.
+- Do not rename EDIT-MY-DETAILS.js or agent-photo.jpg.
+- Do not create extra required files.
+- Do not use external image URLs for the agent photograph.
+- Do not add paid APIs, trackers, cookies, login systems or dependencies.
+
+If you improve the JavaScript used inside index.html, it must still read the
+existing EDIT-MY-DETAILS.js exactly as supplied. Do not ask the user to modify
+its variable names or structure.
+
+---------------------------------------------------------------------
+QUALITY CHECK BEFORE ANSWERING
+---------------------------------------------------------------------
+
+Before giving the result, internally verify that:
+
+1. The HTML, CSS and JavaScript are syntactically complete.
+2. EDIT-MY-DETAILS.js is loaded using a correct relative path.
+3. agent-photo.jpg is loaded using a correct relative path.
+4. No placeholder initials appear over a valid agent photograph.
+5. Call, WhatsApp, Email and enquiry actions remain functional.
+6. The page adapts properly to narrow mobile screens.
+7. The website works as a static Netlify deployment.
+8. No existing editable field has been ignored merely because the theme changed.
+
+---------------------------------------------------------------------
+OUTPUT FORMAT
+---------------------------------------------------------------------
+
+Return one complete, ready-to-use index.html file—not fragments, explanations,
+diffs or partial CSS. Put all required CSS and page JavaScript inside that
+index.html while continuing to load EDIT-MY-DETAILS.js separately.
+
+If your interface supports file creation, provide index.html as a downloadable
+file. Otherwise, provide the full code in one single HTML code block so it can
+be copied and saved as index.html.
+
+Do not modify or regenerate EDIT-MY-DETAILS.js unless there is a genuine
+compatibility problem. If you detect one, explain it first and wait for my
+approval instead of silently changing the editable data structure.
+
+Now inspect the uploaded files and create the redesigned index.html.

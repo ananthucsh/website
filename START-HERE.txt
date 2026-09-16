@@ -1,0 +1,225 @@
+AGENT WEBSITE — START HERE
+സ്വന്തമായി ഒരു സൗജന്യ Website തയ്യാറാക്കി Publish ചെയ്യാനുള്ള പൂർണ്ണ നിർദ്ദേശങ്ങൾ
+
+============================================================
+ഈ FOLDER-ൽ ഉണ്ടായിരിക്കേണ്ട FILES
+============================================================
+
+1. index.html
+   Website-ന്റെ design ഉം പ്രവർത്തനവും ഈ file-ലാണ്. ഇത് edit ചെയ്യേണ്ടതില്ല.
+
+2. EDIT-MY-DETAILS.js
+   Agent-ന്റെ പേര്, ഫോൺ നമ്പർ, WhatsApp, email, experience, languages,
+   licence details, About paragraph, products തുടങ്ങിയവ ഈ file-ൽ മാറ്റാം.
+
+3. agent-photo.jpg
+   Website-ൽ കാണിക്കേണ്ട professional photograph.
+
+IMPORTANT:
+- ഈ മൂന്ന് files-ഉം ഒരേ folder-ൽ തന്നെ സൂക്ഷിക്കണം.
+- File names മാറ്റരുത്.
+- ZIP file ലഭിച്ചാൽ ആദ്യം Right-click > Extract All ചെയ്യണം.
+- ZIP file നേരിട്ട് Netlify-ലേക്ക് upload ചെയ്യരുത്.
+
+
+============================================================
+PART 1 — AGENT DETAILS മാറ്റുന്നത്
+============================================================
+
+1. EDIT-MY-DETAILS.js എന്ന file-ൽ Right-click ചെയ്യുക.
+2. Open with > Notepad തിരഞ്ഞെടുക്കുക.
+3. Quotation marks-ന്റെ ഉള്ളിലുള്ള വിവരങ്ങൾ മാത്രം മാറ്റുക.
+
+Example:
+name: "Suraj S"
+
+ഇത് ഇങ്ങനെ മാറ്റാം:
+name: "Suresh Kumar"
+
+താഴെ പറയുന്ന വിവരങ്ങൾ ആവശ്യാനുസരണം മാറ്റാം:
+
+- Name, professional title and location
+- Experience and languages
+- Phone and WhatsApp number
+- Email and Agent/Licence number
+- Availability message and About paragraph
+- Insurance products and descriptions
+
+MOBILE NUMBER FORMAT:
+91 + 10-digit mobile number ഉപയോഗിക്കുക.
+
+Correct: 919876543210
+Wrong: +91 98765 43210
+
+മാറ്റങ്ങൾ പൂർത്തിയാക്കിയ ശേഷം Ctrl + S അമർത്തി save ചെയ്യുക.
+
+WARNING:
+- Quotation marks, commas, brackets, braces എന്നിവ delete ചെയ്യരുത്.
+- EDIT-MY-DETAILS.js എന്ന filename മാറ്റരുത്.
+
+
+============================================================
+PART 2 — സ്വന്തം PHOTO ചേർക്കുന്നത്
+============================================================
+
+1. ഒരു clear professional photograph തിരഞ്ഞെടുക്കുക.
+2. Windows File Explorer-ൽ View > Show > File name extensions ON ചെയ്യുക.
+3. Photo-യുടെ പേര് കൃത്യമായി agent-photo.jpg എന്ന് മാറ്റുക.
+4. പഴയ sample photo replace ചെയ്ത് പുതിയ photo ഇതേ folder-ൽ ഇടുക.
+
+IMPORTANT:
+- agent-photo.jpg.jpg ആകരുത്.
+- Photo PNG format ആണെങ്കിൽ JPG ആയി save/convert ചെയ്ത ശേഷം ഉപയോഗിക്കുക.
+
+
+============================================================
+PART 3 — WEBSITE LAPTOP-ൽ TEST ചെയ്യുന്നത്
+============================================================
+
+1. index.html double-click ചെയ്യുക.
+2. Website Chrome അല്ലെങ്കിൽ Microsoft Edge-ൽ തുറക്കും.
+3. താഴെ പറയുന്ന കാര്യങ്ങൾ പരിശോധിക്കുക:
+
+- പേര്, experience, languages, products ശരിയാണോ?
+- Photograph ശരിയായി കാണുന്നുണ്ടോ?
+- Call button പ്രവർത്തിക്കുന്നുണ്ടോ?
+- WhatsApp ശരിയായ number-ലേക്കാണോ പോകുന്നത്?
+- Email address ശരിയാണോ?
+- Enquiry form WhatsApp message തയ്യാറാക്കുന്നുണ്ടോ?
+
+മാറ്റങ്ങൾ കാണുന്നില്ലെങ്കിൽ Ctrl + F5 അമർത്തി refresh ചെയ്യുക.
+
+
+============================================================
+PART 4 — FREE NETLIFY ACCOUNT തുറക്കുന്നത്
+============================================================
+
+Netlify website-ന് സൗജന്യ hosting നൽകുന്നു. Free address സാധാരണയായി
+your-name.netlify.app എന്ന രീതിയിലായിരിക്കും.
+
+1. Chrome/Edge-ൽ https://app.netlify.com/drop തുറക്കുക.
+2. Sign up അല്ലെങ്കിൽ Log in തിരഞ്ഞെടുക്കുക.
+3. Continue with Google തിരഞ്ഞെടുക്കുക.
+4. നിങ്ങളുടെ Gmail account തിരഞ്ഞെടുക്കുക.
+5. Netlify ആവശ്യപ്പെടുന്ന basic permission അനുവദിച്ച് account creation
+   പൂർത്തിയാക്കുക.
+
+Payment card details നൽകേണ്ടതില്ല. Paid plan തിരഞ്ഞെടുക്കേണ്ടതില്ല.
+Free plan മതിയാകും.
+
+
+============================================================
+PART 5 — WEBSITE NETLIFY-ലേക്ക് UPLOAD ചെയ്യുന്നത്
+============================================================
+
+1. Login ചെയ്ത ശേഷം https://app.netlify.com/drop തുറക്കുക.
+2. “Drag and drop your site” അല്ലെങ്കിൽ സമാനമായ upload area കണ്ടെത്തുക.
+3. File Explorer-ൽ നിങ്ങളുടെ extracted website folder കണ്ടെത്തുക.
+
+Folder-ന്റെ ഉള്ളിൽ കുറഞ്ഞത് ഇവ ഉണ്ടായിരിക്കണം:
+
+index.html
+EDIT-MY-DETAILS.js
+agent-photo.jpg
+
+4. ഈ complete folder mouse ഉപയോഗിച്ച് Netlify upload area-യിലേക്ക്
+   drag and drop ചെയ്യുക.
+5. Upload പൂർത്തിയാകുന്നത് വരെ കാത്തിരിക്കുക.
+6. Netlify നൽകുന്ന live website address തുറക്കുക.
+
+Example:
+https://amazing-name-123.netlify.app
+
+IMPORTANT:
+- index.html മാത്രം upload ചെയ്യരുത്.
+- ഓരോ file-ഉം പ്രത്യേകം upload ചെയ്യരുത്.
+- ZIP file upload ചെയ്യരുത്.
+- Extract ചെയ്ത complete folder upload ചെയ്യണം.
+
+
+============================================================
+PART 6 — WEBSITE NAME മാറ്റുന്നത്
+============================================================
+
+Netlify ആദ്യം ഒരു random site name നൽകാം. അത് മാറ്റാൻ:
+
+1. Netlify dashboard-ൽ നിങ്ങളുടെ website/project തുറക്കുക.
+2. Site configuration അല്ലെങ്കിൽ Project configuration തുറക്കുക.
+3. General > Site details / Project details ഭാഗം കണ്ടെത്തുക.
+4. Change site name / Change project name തിരഞ്ഞെടുക്കുക.
+5. ലഭ്യമായ ഒരു ലളിതമായ പേര് നൽകുക.
+
+Example:
+suresh-insurance-services
+
+പുതിയ address:
+https://suresh-insurance-services.netlify.app
+
+NOTE:
+- പേര് മറ്റൊരാൾ ഉപയോഗിക്കുന്നുണ്ടെങ്കിൽ മറ്റൊരു പേര് തിരഞ്ഞെടുക്കണം.
+- Custom .com അല്ലെങ്കിൽ .in domain സൗജന്യമല്ല.
+- ഈ workshop-ന് free netlify.app address മതിയാകും.
+
+
+============================================================
+PART 7 — LIVE WEBSITE FINAL CHECK
+============================================================
+
+Website link mobile phone-ൽ തുറന്ന് പരിശോധിക്കുക:
+
+- Mobile layout ശരിയാണോ?
+- Photograph കാണുന്നുണ്ടോ?
+- Call button പ്രവർത്തിക്കുന്നുണ്ടോ?
+- WhatsApp ശരിയായ agent number-ലേക്ക് തുറക്കുന്നുണ്ടോ?
+- Enquiry form ശരിയായ message തയ്യാറാക്കുന്നുണ്ടോ?
+- Email link ശരിയാണോ?
+
+എല്ലാം ശരിയാണെങ്കിൽ website link customers-ന് WhatsApp വഴി share ചെയ്യാം.
+
+
+============================================================
+PART 8 — പിന്നീട് DETAILS മാറ്റുകയാണെങ്കിൽ
+============================================================
+
+1. EDIT-MY-DETAILS.js Notepad-ൽ തുറക്കുക.
+2. ആവശ്യമായ മാറ്റം വരുത്തി Ctrl + S അമർത്തുക.
+3. Photo മാറ്റണമെങ്കിൽ പുതിയ photo agent-photo.jpg എന്ന പേരിൽ replace ചെയ്യുക.
+4. Netlify dashboard-ൽ അതേ website/project തുറക്കുക.
+5. Deploys section-ൽ manual deploy / drag-and-drop area കണ്ടെത്തുക.
+6. Updated complete folder വീണ്ടും drag and drop ചെയ്യുക.
+
+Website അതേ address-ൽ പുതിയ വിവരങ്ങളോടെ update ആകും.
+
+
+============================================================
+COMMON PROBLEMS
+============================================================
+
+PROBLEM: Photo കാണുന്നില്ല
+SOLUTION: Filename agent-photo.jpg തന്നെയാണോ എന്ന് പരിശോധിക്കുക.
+
+PROBLEM: പഴയ വിവരങ്ങളാണ് കാണുന്നത്
+SOLUTION: JS file save ചെയ്തിട്ടുണ്ടോ എന്ന് നോക്കുക; folder വീണ്ടും deploy
+ചെയ്ത് Ctrl + F5 അമർത്തുക.
+
+PROBLEM: Design കാണുന്നു, പക്ഷേ details കാണുന്നില്ല
+SOLUTION: EDIT-MY-DETAILS.js folder-ൽ ഉണ്ടോയെന്നും filename മാറിയിട്ടില്ലെന്നും
+പരിശോധിക്കുക.
+
+PROBLEM: WhatsApp/Call button പ്രവർത്തിക്കുന്നില്ല
+SOLUTION: Number 91 + 10 digits format-ൽ നൽകുക. +, spaces, hyphens ഒഴിവാക്കുക.
+
+PROBLEM: Netlify page website തുറക്കുന്നില്ല
+SOLUTION: Uploaded folder-ന്റെ main level-ൽ index.html ഉണ്ടെന്ന് ഉറപ്പാക്കുക.
+
+
+============================================================
+FINAL REMINDER
+============================================================
+
+Edit details > Add photo > Test locally > Upload folder > Test live > Share link
+
+ഈ website create ചെയ്യാനും host ചെയ്യാനും ഒരു രൂപ പോലും ചെലവാക്കേണ്ടതില്ല.
+Website-ൽ പ്രസിദ്ധീകരിക്കുന്ന എല്ലാ വിവരങ്ങളും agent പരിശോധിച്ച് ഉറപ്പാക്കണം.
+Guaranteed claim settlement, lowest premium തുടങ്ങിയ ഉറപ്പുകൾ നൽകരുത്.
+Footer disclaimer delete ചെയ്യരുത്.
